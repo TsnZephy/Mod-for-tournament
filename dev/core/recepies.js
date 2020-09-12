@@ -113,7 +113,155 @@ Callback.addCallback("PreLoaded", function(){
 		"xxx",
 		"xxx"
 	], ['x', ItemID.ingotAluminium, 0]);
+    
+    
+    //plates
+    Recipes.addShaped({id: ItemID.plateIron, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', 265, 0]);
+    
+    Recipes.addShaped({id: ItemID.plateGold, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', 266, 0]);
+    
+    Recipes.addShaped({id: ItemID.plateCopper, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', ItemID.ingotCopper, 0]);
+    
+    Recipes.addShaped({id: ItemID.plateTin, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', ItemID.ingotTin, 0]);
+    
+    Recipes.addShaped({id: ItemID.plateLead, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', ItemID.ingotLead, 0]);
+    
+    Recipes.addShaped({id: ItemID.plateSilver, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', ItemID.ingotSilver, 0]);
+    
+    Recipes.addShaped({id: ItemID.plateSteel, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', ItemID.ingotSteel, 0]);
+    
+    Recipes.addShaped({id: ItemID.plateOsmium, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', ItemID.ingotOsmium, 0]);
+    
+    Recipes.addShaped({id: ItemID.plateNickel, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', ItemID.ingotNickel, 0]);
+    
+    Recipes.addShaped({id: ItemID.plateAluminium, count: 3, data: 0}, [
+		"   ",
+		"xxx",
+		"   "
+	], ['x', ItemID.ingotAluminium, 0]);
 	
+    //sheetmetal
+    Recipes.addShaped({id: BlockID.sheetmetalIron, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateIron, 0]);
+    
+    Recipes.addShaped({id: BlockID.sheetmetalGold, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateGold, 0]);
+    
+    Recipes.addShaped({id: BlockID.sheetmetalCopper, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateCopper, 0]);
+    
+    Recipes.addShaped({id: BlockID.sheetmetalTin, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateTin, 0]);
+    
+    Recipes.addShaped({id: BlockID.sheetmetalLead, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateLead, 0]);
+    
+    Recipes.addShaped({id: BlockID.sheetmetalSilver, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateSilver, 0]);
+    
+    Recipes.addShaped({id: BlockID.sheetmetalSteel, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateSteel, 0]);
+    
+    Recipes.addShaped({id: BlockID.sheetmetalOsmium, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateOsmium, 0]);
+    
+    Recipes.addShaped({id: BlockID.sheetmetalNickel, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateNickel, 0]);
+    
+    Recipes.addShaped({id: BlockID.sheetmetalAluminium, count: 4, data: 0}, [
+		" x ",
+		"x x",
+		" x "
+	], ['x', ItemID.plateAluminium, 0]);
+    
+    //components
+    Recipes.addShaped({id: BlockID.machineBlockLight, count: 2, data: 0}, [
+		"iii",
+		"clc",
+		"iii"
+	], ['s', ItemID.plateIron, 0], ['c', ItemID.ingotCopper, 0], ['z', ItemID.ingotlead, 0]);
+    
+    Recipes.addShaped({id: BlockID.machineBlockHeavy, count: 2, data: 0}, [
+		"sss",
+		"czc",
+		"sss"
+	], ['s', ItemID.plateSteel, 0], ['c', ItemID.ingotCopper, 0], ['z', ItemID.ingotZinc, 0]);
+    
+    Recipes.addShaped({id: BlockID.machineScaffolding, count: 16, data: 0}, [
+		"sps",
+		"i i",
+		"sss"
+	], ['s', ItemID.ingotSteel, 0], ['i', 265, 0], ['p', 5, 0]);
+    
+    Recipes.addShaped({id: BlockID.fenceSteel, count: 4, data: 0}, [
+		"   ",
+		"xxx",
+		"xxx"
+	], ['x', ItemID.ingotSteel, 0]);
+    
     // from blocks to ingots
 	Recipes.addShapeless({id: ItemID.ingotCopper, count: 9, data: 0}, [{id: BlockID.blockCopper, data: 0}]);
 	Recipes.addShapeless({id: ItemID.ingotTin, count: 9, data: 0}, [{id: BlockID.blockTin, data: 0}]);
@@ -123,7 +271,4 @@ Callback.addCallback("PreLoaded", function(){
 	Recipes.addShapeless({id: ItemID.ingotSilver, count: 9, data: 0}, [{id: BlockID.blockSilver, data: 0}]);
 	Recipes.addShapeless({id: ItemID.ingotNickel, count: 9, data: 0}, [{id: BlockID.blockNickel, data: 0}]);
 	Recipes.addShapeless({id: ItemID.ingotAluminium, count: 9, data: 0}, [{id: BlockID.blockAluminium, data: 0}]);
-});
-	
-
 });
