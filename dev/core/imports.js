@@ -1,2 +1,2 @@
 IMPORT("ToolLib");
-IMPORT("EnergyLib");
+IMPORT("EnergyNet");
