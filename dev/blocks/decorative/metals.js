@@ -29,7 +29,7 @@ IDRegistry.genBlockID("blockOsmium");
 Block.createBlock("blockOsmium", [
 	{name: "Osmium Block", texture: [["block_osmium", 0]], inCreative: true}
 ], "stone");
-ToolAPI.registerBlockMaterial(BlockID.blockBronze, "stone", 2, true);
+ToolAPI.registerBlockMaterial(BlockID.blockOsmium, "stone", 2, true);
 Block.setDestroyLevel("blockOsmium", 3);
 ToolLib.addBlockDropOnExplosion("blockOsmium");
 Translation.addTranslation("Osmium Block", {ru: "Осмиевый блок"});
@@ -65,7 +65,7 @@ IDRegistry.genBlockID("blockNickel");
 Block.createBlock("blockNickel", [
 	{name: "Nickel Block", texture: [["block_nickel", 0]], inCreative: true}
 ], "stone");
-ToolAPI.registerBlockMaterial(BlockID.blockUranium, "stone", 2, true);
+ToolAPI.registerBlockMaterial(BlockID.blockNickel, "stone", 2, true);
 Block.setDestroyLevel("blockNickel", 2);
 ToolLib.addBlockDropOnExplosion("blockNickel");
 Translation.addTranslation("Nickel Block", {ru: "Никелевый блок"});
@@ -74,7 +74,7 @@ IDRegistry.genBlockID("blockAluminium");
 Block.createBlock("blockAluminium", [
 	{name: "Aluminium Block", texture: [["block_aluminium", 0]], inCreative: true}
 ], "stone");
-ToolAPI.registerBlockMaterial(BlockID.blockUranium, "stone", 2, true);
+ToolAPI.registerBlockMaterial(BlockID.blockAluminium, "stone", 2, true);
 Block.setDestroyLevel("blockAluminium", 2);
 ToolLib.addBlockDropOnExplosion("blockAluminium");
 Translation.addTranslation("Aluminium Block", {ru: "Алюминиевый блок"});
