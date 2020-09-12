@@ -7,7 +7,7 @@ Block.createSpecialType({
 	renderlayer: 2
 }, "machine");
 
-IDRegistry.genBlockID("machineBlockLignt");
+IDRegistry.genBlockID("machineBlockLight");
 Block.createBlock("machineBlockLight", [
 	{name: "Light Construction Block", texture: [["machine_light", 0]], inCreative: true}
 ], "machine");
@@ -36,12 +36,27 @@ Translation.addTranslation("Steel Scaffolding", {ru: "Стальные Стро�
 
 IDRegistry.genBlockID("fenceSteel");
 Block.createBlock("fenceSteel", [
-	{name: "Steel Fence", texture: [["blcok_steel", 0]], inCreative: true}
+	{name: "Steel Fence", texture: [["block_steel", 0]], inCreative: true}
 ],{rendertype: 32});
 ToolAPI.registerBlockMaterial(BlockID.fenceSteel, "stone", 1, true);
 Block.setDestroyLevel("fenceSteel", 1);
 ToolLib.addBlockDropOnExplosion("fenceSteel");
 Translation.addTranslation("Steel Fence", {ru: "Стальной Забор"});
+
+
+function enableICRenderCoordMapping(id) {
+var render = new ICRender.Model();
+var model = BlockRenderer.createModel();
+model.addBlock(id);
+render.addEntry(model);
+BlockRenderer.enableCoordMapping(id, -1, render);
+}
+
+enableICRenderCoordMapping(BlockID.machineBlockLight);
+enableICRenderCoordMapping(BlockID.machineBlockHeavy);
+enableICRenderCoordMapping(BlockID.machineScaffolding);
+enableICRenderCoordMapping(BlockID.fenceSteel);
+enableICRenderCoordMapping(154);
 
 Item.addCreativeGroup("blockMachine", Translation.translate("Machine Blocks"), [
 	BlockID.machineBlockLight,
