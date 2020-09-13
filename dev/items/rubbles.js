@@ -41,6 +41,7 @@ Translation.addTranslation("Osmium Rubble", {ru: "Осмиевый щебень"
 Item.addCreativeGroup("rubbleMetal", Translation.translate("Metal Rubbles"), [
 	ItemID.rubbleCopper,
 	ItemID.rubbleTin,
+	ItemID.rubbleZinc,
 	ItemID.rubbleOsmium,
 	ItemID.rubbleLead,
 	ItemID.rubbleSilver,

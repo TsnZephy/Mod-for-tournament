@@ -47,6 +47,7 @@ Item.addCreativeGroup("plateMetal", Translation.translate("Metal Plates"), [
     ItemID.plateGold,
     ItemID.plateCopper,
 	ItemID.plateTin,
+	ItemID.plateZinc,
 	ItemID.plateOsmium,
 	ItemID.plateLead,
 	ItemID.plateSteel,

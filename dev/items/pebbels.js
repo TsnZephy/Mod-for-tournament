@@ -47,5 +47,6 @@ Item.addCreativeGroup("pebbelsMetal", Translation.translate("Metal Pebbels"), [
 	ItemID.pebbelsLead,
 	ItemID.pebbelsSilver,
 	ItemID.pebbelsNickel,
+    ItemID.pebbelsZinc,
     ItemID.pebbelsAluminium
 ]);

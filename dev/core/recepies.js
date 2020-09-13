@@ -262,6 +262,24 @@ Callback.addCallback("PreLoaded", function(){
 		"xxx"
 	], ['x', ItemID.ingotSteel, 0]);
     
+    Recipes.addShaped({id: ItemID.cableLV, count: 32, data: 0}, [
+		"ppp",
+		"rrr",
+		"ppp"
+	], ['p', ItemID.plateCopper, 0], ['r', 55, 0]);
+    
+    Recipes.addShaped({id: ItemID.cableMV, count: 32, data: 0}, [
+		"ppp",
+		"rrr",
+		"ppp"
+	], ['p', ItemID.plateGold, 0], ['r', 55, 0]);
+    
+    Recipes.addShaped({id: ItemID.cableHV, count: 32, data: 0}, [
+		"ppp",
+		"rrr",
+		"ppp"
+	], ['p', ItemID.plateOsmium, 0], ['r', 55, 0]);
+    
     // from blocks to ingots
 	Recipes.addShapeless({id: ItemID.ingotCopper, count: 9, data: 0}, [{id: BlockID.blockCopper, data: 0}]);
 	Recipes.addShapeless({id: ItemID.ingotTin, count: 9, data: 0}, [{id: BlockID.blockTin, data: 0}]);

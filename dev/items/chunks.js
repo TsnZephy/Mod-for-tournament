@@ -41,6 +41,7 @@ Translation.addTranslation("Osmium Chunk", {ru: "Осмиевые куски"});
 Item.addCreativeGroup("chunkMetal", Translation.translate("Metal Chunks"), [
 	ItemID.chunkCopper,
 	ItemID.chunkTin,
+	ItemID.chunkZinc,
 	ItemID.chunkOsmium,
 	ItemID.chunkLead,
 	ItemID.chunkSilver,

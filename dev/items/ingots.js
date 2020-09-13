@@ -37,6 +37,7 @@ Translation.addTranslation("Steel Ingot", {ru: "Стальной слиток"})
 Item.addCreativeGroup("ingotMetal", Translation.translate("Metal Ingots"), [
 	ItemID.ingotCopper,
 	ItemID.ingotTin,
+	ItemID.ingotZinc,
 	ItemID.ingotOsmium,
 	ItemID.ingotLead,
 	ItemID.ingotSteel,

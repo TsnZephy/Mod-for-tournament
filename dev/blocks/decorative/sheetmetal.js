@@ -34,15 +34,6 @@ Block.setDestroyLevel("sheetmetalLead", 3);
 ToolLib.addBlockDropOnExplosion("sheetmetalLead");
 Translation.addTranslation("Lead Sheetmetal", {ru: "Блок Листовго Свинца"});
 
-IDRegistry.genBlockID("sheetmetalSteel");
-Block.createBlock("sheetmetalSteel", [
-	{name: "Steel Sheetmetal", texture: [["sheetmetal_steel", 0]], inCreative: true}
-], "stone");
-ToolAPI.registerBlockMaterial(BlockID.sheetmetalSteel, "stone", 2, true);
-Block.setDestroyLevel("sheetmetalSteel", 3);
-ToolLib.addBlockDropOnExplosion("sheetmetalSteel");
-Translation.addTranslation("Steel Sheetmetal", {ru: "Блок Листовой Стали"});
-
 IDRegistry.genBlockID("sheetmetalSilver");
 Block.createBlock("sheetmetalSilver", [
 	{name: "Silver Sheetmetal", texture: [["sheetmetal_silver", 0]], inCreative: true}

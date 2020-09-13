@@ -47,6 +47,7 @@ Item.addCreativeGroup("dustMetal", Translation.translate("Metal Dusts"), [
     ItemID.dustGold,    
     ItemID.dustCopper,
 	ItemID.dustTin,
+	ItemID.dustZinc,
 	ItemID.dustOsmium,
 	ItemID.dustLead,
 	ItemID.dustSteel,
