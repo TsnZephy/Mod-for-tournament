@@ -1,9 +1,5 @@
 core/imports.js
 
-blocks/decorative/metals.js
-blocks/decorative/sheetmetal.js
-blocks/multiblock_component/machine.js
-
 items/chunks.js
 items/rubbles.js
 items/pebbels.js
@@ -11,8 +7,13 @@ items/dusts.js
 items/ingots.js
 items/plates.js
 
-machines/crusher/crusherVariants.js
-machines/grinder/grinderVariants.js
-machines/sifter/sifterVariants.js
+blocks/decorative/metals.js
+blocks/decorative/sheetmetal.js
+blocks/multiblock_component/machine.js
 
-core/recepies.js
+machines/crusher/crusherVariants.js
+machines/crusher/crusher.js
+machines/grinder/grinderVariants.js
+machines/grinder/grinder.js
+machines/sifter/sifterVariants.js
+machines/sifter/sifter.js
